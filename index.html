@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sufal Saha </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -12,14 +14,17 @@
     <!-- Header -->
     <header>
         <nav>
-            <h1><h1>Full Stack Developer</h1></h1>
+            <h1>Full Stack Developer</h1>
 
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+
         </nav>
     </header>
 
@@ -27,6 +32,15 @@
     <section id="about" class="about">
         <div class="about-text">
             <h2>Hello, I'm <span>Sufal Saha</span></h2>
+<div class="role-wrapper">
+    <span id="typing"></span>
+    <span class="typing-cursor"></span>
+</div>
+
+            <!-- <p class="typing-text">
+    <span id="typing"></span><span class="typing-cursor">|</span>
+</p> -->
+
 
             <p>
     I’m an aspiring MERN Stack Developer passionate about building
@@ -47,30 +61,57 @@
         </div>
     </section>
 
+
+
     <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
 
-        <div class="card">
+<section id="education">
+    <h2>Education</h2>
+
+
+<p class="education-caption">
+    Building my <span>foundation</span>, shaping my future.
+</p>
+
+<div class="education-timeline">
+
+    <div class="education-item">
+        <div class="timeline-dot"></div>
+        <div class="education-content">
+            <span class="education-year">2024 – 2028</span>
             <h3>Bachelor's Degree</h3>
-            <p>Computer Science</p>
-            <p>SwamiVivekananda University</p>
-            <p>2024 - 2028</p>
+            <p class="education-course">Computer Science</p>
+            <p class="education-institution">
+                Swami Vivekananda University
+            </p>
+            <span class="education-status">Currently Pursuing</span>
         </div>
+    </div>
 
-        <div class="card">
+    <div class="education-item">
+        <div class="timeline-dot"></div>
+
+        <div class="education-content">
+            <span class="education-year">Completed in 2024</span>
             <h3>Higher Secondary</h3>
-            <p>Kalyangarh Vidyamandir(H.S)</p>
-            <p>Completed in 2024</p>
+            <p class="education-institution">
+                Kalyangarh Vidyamandir (H.S.)
+            </p>
         </div>
-    </section>
+    </div>
+
+</div>
+</section>
+
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Technical Skills</h2>
 <p class="skills-caption">
-    Technologies and tools I use to build, develop, and solve real-world problems.
+    My Tech Stack <span>&amp; Expertise</span>
+    <small>Technologies I use to turn ideas into practical solutions.</small>
 </p>
+
 
         <div class="skills-container">
             <div class="skill">C++</div>
@@ -82,20 +123,177 @@
             <div class="skill">Express Js</div>
             <div class="skill">Node Js</div>
             <div class="skill">MERN Stack</div>
+            <div class="skill">Git & GitHub</div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <!-- Projects Section -->
 
-        <div class="contact-info">
-            <p><strong>Email:</strong> sufals172@gmail.com</p>
-            <p><strong>Phone:</strong> +91 6295416638</p>
-            <p><strong>Location:</strong> India</p>
+<section id="projects">
+    <h2>Featured Projects</h2>
+
+<p class="projects-caption">
+    Turning ideas into <span>real-world applications.</span>
+</p>
+
+<div class="projects-container">
+
+    <div class="project-card">
+
+        <div class="project-number">01 / PROJECT</div>
+
+        <h3>Weather App</h3>
+
+        <p class="project-description">
+            A responsive weather application that provides
+            current weather information for a searched city.
+            It displays temperature, weather conditions, and
+            other useful weather details using a weather API.
+        </p>
+
+        <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>WeatherAPI</span>
         </div>
-    </section>
 
+        <div class="project-links">
+    <a href="https://sufals172-cloud.github.io/Weather-App/"
+       target="_blank"
+       rel="noopener noreferrer">
+        Live Demo ↗
+    </a>
+
+    <a href="https://github.com/sufals172-cloud/Weather-App"
+       target="_blank"
+       rel="noopener noreferrer">
+        GitHub ↗
+    </a>
+</div>
+    </div>
+</div>
+</section>
+
+
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p class="contact-subtitle">
+        Let's connect and build <span>something amazing together.</span>
+    </p>
+
+    <!-- Contact Cards -->
+    <div class="contact-grid">
+
+        <!-- Email Card -->
+        <div class="contact-card">
+            <div class="contact-icon">✉</div>
+            <h3>Email</h3>
+            <p>sufals172@gmail.com</p>
+
+            <div class="contact-actions">
+                <a href="mailto:sufals172@gmail.com"
+                   class="contact-btn email-btn">
+                    <span class="btn-icon">✉</span>
+                    Send Email
+                </a>
+
+                <button type="button"
+                        id="copyEmailBtn"
+                        class="contact-btn copy-btn">
+                    <span class="btn-icon">⧉</span>
+                    Copy Email
+                </button>
+            </div>
+        </div>
+
+        <!-- Phone Card -->
+        <div class="contact-card">
+            <div class="contact-icon">☎</div>
+            <h3>Reach Me</h3>
+            <p>+91 629541****</p>
+
+            <a href="tel:+916295416638" class="contact-btn">
+                ☎ Connect
+            </a>
+        </div>
+
+        <!-- Location Card -->
+        <div class="contact-card">
+            <div class="contact-icon">⌖</div>
+            <h3>Location</h3>
+            <p>Kolkata, West Bengal</p>
+        </div>
+
+    </div>
+    <!-- End of contact-grid -->
+
+    <!-- Social Links -->
+    <div class="contact-socials">
+        <h3>Connect With Me</h3>
+
+        <!-- <div class="social-buttons">
+            <a href="https://github.com/sufals172-cloud"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-btn">
+                GitHub ↗
+            </a>
+
+            <a href="https://www.linkedin.com/in/sufal-saha-45a661327/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-btn">
+                LinkedIn ↗
+            </a>
+        </div> -->
+
+    
+
+        <div class="social-buttons">
+            <a href="https://github.com/sufals172-cloud"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-btn">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sufal-saha-45a661327/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-btn">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+        </div>
+    
+
+
+
+
+
+    </div>
+
+    <!-- Get In Touch -->
+    <div class="contact-cta">
+        <h3>Have a Project in Mind?</h3>
+
+        <p>
+            Open to new projects, collaboration, and opportunities.
+        </p>
+
+        <a href="mailto:sufals172@gmail.com?subject=Let's%20Connect"
+           class="contact-main-btn">
+            Get In Touch →
+        </a>
+    </div>
+
+</section>
     <!-- Footer -->
     <footer>
         <p>© 2026 Sufal Saha. All Rights Reserved.</p>

@@ -1,14 +1,14 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Back-to-top button
-    const topButton = document.createElement("button");
+    // Back-to-top button
+     const topButton = document.createElement("button");
 
     topButton.textContent = "↑";
     topButton.id = "backToTop";
-    topButton.setAttribute("aria-label", "Back to top");
-
-    // Keep the existing theme
+     topButton.setAttribute("aria-label", "Back to top");
+    
+    // Button styles 
     Object.assign(topButton.style, {
         position: "fixed",
         bottom: "25px",
